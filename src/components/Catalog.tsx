@@ -44,7 +44,7 @@ export default function Catalog({
 
       <p className="mt-5 text-sm text-ink/70">{active.description}</p>
 
-      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+      <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
         {active.colors.map((color) => (
           <VariantCard key={color.label} product={active} color={color} />
         ))}
