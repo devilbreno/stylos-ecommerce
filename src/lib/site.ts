@@ -1,7 +1,10 @@
 /**
  * Domínio ainda não definido (pendência administrativa do briefing).
- * No deploy, configurar NEXT_PUBLIC_SITE_URL com o domínio final —
- * o fallback mantém preview/local funcionando normalmente.
+ * Na Vercel, VERCEL_PROJECT_PRODUCTION_URL aponta pro domínio de produção
+ * do projeto (inclusive quando o domínio final for adicionado) — só usada
+ * em código server-side (metadata, sitemap, robots), não precisa de
+ * prefixo NEXT_PUBLIC. O fallback mantém o ambiente local funcionando.
  */
-export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+export const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000";
