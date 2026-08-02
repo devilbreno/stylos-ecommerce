@@ -8,7 +8,7 @@ export default function Toast() {
 
   useEffect(() => {
     if (!toast) return;
-    const timer = setTimeout(dismissToast, 3500);
+    const timer = setTimeout(dismissToast, 2200);
     return () => clearTimeout(timer);
   }, [toast, dismissToast]);
 
@@ -18,7 +18,7 @@ export default function Toast() {
     <div
       role="status"
       aria-live="polite"
-      className="fixed bottom-6 left-1/2 z-110 flex -translate-x-1/2 items-center gap-3 rounded-md bg-navy py-2.5 pr-2.5 pl-4 text-sm font-medium text-white shadow-lg"
+      className="fixed bottom-6 left-1/2 z-120 flex w-max max-w-[calc(100vw-2rem)] -translate-x-1/2 items-center gap-3 rounded-md bg-navy py-2.5 pr-2.5 pl-4 text-sm font-medium text-white shadow-lg"
     >
       {toast.message}
       <button
