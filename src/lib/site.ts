@@ -8,3 +8,6 @@
 export const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
   : "http://localhost:3000";
+
+/** Número do WhatsApp da loja (briefing, Seção 6) */
+export const whatsappNumber = "5516992949249";

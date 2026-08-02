@@ -6,6 +6,7 @@ import TrustBar from "@/components/TrustBar";
 import CartDrawer from "@/components/CartDrawer";
 import Footer from "@/components/Footer";
 import Toast from "@/components/Toast";
+import WhatsAppFab from "@/components/WhatsAppFab";
 import { CartProvider } from "@/context/CartContext";
 import { siteUrl } from "@/lib/site";
 
@@ -88,6 +89,7 @@ export default function RootLayout({
           <TrustBar />
           {children}
           <Footer />
+          <WhatsAppFab />
           <CartDrawer />
           <Toast />
         </CartProvider>

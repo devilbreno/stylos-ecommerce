@@ -9,8 +9,7 @@ import {
   type CartItem,
 } from "@/context/CartContext";
 import { formatPrice, getProduct } from "@/data/products";
-
-const WHATSAPP_NUMBER = "5516992949249";
+import { whatsappNumber } from "@/lib/site";
 
 function buildWhatsAppUrl(items: CartItem[], total: number): string {
   const lines = items.map((item) => {
@@ -35,7 +34,7 @@ function buildWhatsAppUrl(items: CartItem[], total: number): string {
     "Retirada na loja em Franca/SP.",
   ].join("\n");
 
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
 function CartLine({ item }: { item: CartItem }) {
