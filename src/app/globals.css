@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/*
+ * Paleta Stylos (CLAUDE.md, Seção 10)
+ * - navy é cor de marca: header, rodapé, hero e CTAs — nunca fundo geral
+ * - prata é accent discreto (linha, ícone, hover) — sem gradiente 3D em UI
+ * - fundo geral do site sempre branco/quase-branco
+ */
+@theme {
+  --color-navy: #000c24;
+  --color-silver: #c0c0c0;
+  --color-silver-dark: #848484;
+  --color-silver-light: #d8d8d8;
+  --color-surface: #fafafa;
+  --color-ink: #0a0a0a;
+  --color-whatsapp: #25d366;
+}
+
+@theme inline {
+  --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
