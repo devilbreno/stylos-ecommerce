@@ -129,7 +129,7 @@ export default function VariantCard({
         {product.sizes && (
           <div>
             <p className="mb-1.5 text-xs text-ink/60">Tamanho</p>
-            <ul className="flex flex-wrap gap-1.5">
+            <ul className="grid grid-cols-4 gap-1.5">
               {product.sizes.map((option) => {
                 const selected = option === size;
                 return (
@@ -141,7 +141,7 @@ export default function VariantCard({
                         setSize(option);
                         setSizeMissing(false);
                       }}
-                      className={`h-8 min-w-9 rounded-md border px-1.5 text-xs font-semibold transition-colors ${
+                      className={`h-9 w-full rounded-md border text-xs font-semibold transition-colors ${
                         selected
                           ? "border-navy bg-navy text-white"
                           : "border-ink/20 bg-white hover:border-navy"
