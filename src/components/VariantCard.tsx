@@ -163,14 +163,16 @@ export default function VariantCard({
 
         {product.priceTiers && (
           <div>
-            <ol className="grid grid-cols-3 overflow-hidden rounded-md border border-ink/15 text-center">
+            {/* Mobile: uma faixa por linha (preço nunca cortado);
+                desktop volta às 3 colunas lado a lado */}
+            <ol className="overflow-hidden rounded-md border border-ink/15 sm:grid sm:grid-cols-3 sm:text-center">
               {product.priceTiers.map((tier) => {
                 const active = tier.price === unit;
                 return (
                   <li
                     key={tier.rangeLabel}
                     aria-current={active ? "true" : undefined}
-                    className={`flex flex-col gap-0.5 border-ink/15 py-2.5 not-first:border-l ${
+                    className={`flex items-center justify-between gap-2 border-ink/15 px-3 py-2 not-first:border-t sm:flex-col sm:justify-center sm:gap-0.5 sm:px-1 sm:py-2.5 sm:not-first:border-t-0 sm:not-first:border-l ${
                       active ? "bg-navy text-white" : "bg-white"
                     }`}
                   >
@@ -179,7 +181,7 @@ export default function VariantCard({
                     >
                       {tier.rangeLabel}
                     </span>
-                    <span className="text-sm font-bold">
+                    <span className="text-sm font-bold whitespace-nowrap">
                       {formatPrice(tier.price)}
                     </span>
                   </li>
