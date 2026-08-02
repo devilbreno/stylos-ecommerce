@@ -29,31 +29,60 @@ const stats = [
   },
 ];
 
+function Stat({ stat }: { stat: (typeof stats)[number] }) {
+  return (
+    <>
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-navy text-white">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          {stat.icon}
+        </svg>
+      </span>
+      <p className="text-sm leading-tight">
+        <strong className="font-semibold">{stat.value}</strong>{" "}
+        <span className="text-ink/60">{stat.label}</span>
+      </p>
+    </>
+  );
+}
+
 export default function TrustBar() {
   return (
     <div className="border-b border-ink/10 bg-surface">
-      <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-x-4 gap-y-3 px-4 py-3 sm:px-6 md:grid-cols-4">
-        {stats.map((stat) => (
-          <li key={stat.label} className="flex min-w-0 items-center gap-2.5 md:justify-center">
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="shrink-0 text-silver-dark"
+      {/* Mobile: faixa rolante em loop contínuo — some se o aparelho
+          pedir menos movimento (a versão estática assume no lugar) */}
+      <div className="overflow-hidden py-3 md:hidden motion-reduce:hidden">
+        <ul className="flex w-max animate-[trust-marquee_28s_linear_infinite]">
+          {[...stats, ...stats].map((stat, index) => (
+            <li
+              key={`${stat.label}-${index}`}
+              aria-hidden={index >= stats.length}
+              className="flex items-center gap-2.5 pr-10 whitespace-nowrap"
             >
-              {stat.icon}
-            </svg>
-            <p className="text-sm leading-tight">
-              <strong className="font-semibold">{stat.value}</strong>{" "}
-              <span className="text-ink/60">{stat.label}</span>
-            </p>
+              <Stat stat={stat} />
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Desktop: 4 colunas estáticas; no mobile só com reduced motion */}
+      <ul className="mx-auto hidden max-w-6xl grid-cols-2 gap-x-4 gap-y-3 px-4 py-3 sm:px-6 md:grid md:grid-cols-4 motion-reduce:grid">
+        {stats.map((stat) => (
+          <li
+            key={stat.label}
+            className="flex min-w-0 items-center gap-2.5 md:justify-center"
+          >
+            <Stat stat={stat} />
           </li>
         ))}
       </ul>

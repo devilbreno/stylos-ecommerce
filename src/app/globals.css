@@ -20,3 +20,11 @@
   --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
+
+/* Marquee da trust bar (mobile): o conteúdo é duplicado no DOM, então
+   -50% recomeça o loop na posição visualmente idêntica, sem salto */
+@keyframes trust-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
