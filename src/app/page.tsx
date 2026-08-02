@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Catalog from "@/components/Catalog";
 import HowItWorks from "@/components/HowItWorks";
+import WatchPromo from "@/components/WatchPromo";
 
 export default function Home() {
   return (
@@ -33,6 +34,8 @@ export default function Home() {
       </section>
 
       <Catalog />
+
+      <WatchPromo />
 
       <HowItWorks />
       <About />
