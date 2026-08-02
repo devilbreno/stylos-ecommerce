@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import CartButton from "@/components/CartButton";
+import MobileNav from "@/components/MobileNav";
 
 const navLinks = [
   { label: "Camisetas", href: "/camisetas" },
@@ -42,26 +43,11 @@ export default function Header() {
           </ul>
         </nav>
 
-        <CartButton />
+        <div className="flex items-center gap-1">
+          <CartButton />
+          <MobileNav links={navLinks} />
+        </div>
       </div>
-
-      <nav
-        aria-label="Categorias"
-        className="border-t border-white/10 md:hidden"
-      >
-        <ul className="flex items-center gap-6 overflow-x-auto px-4 py-2.5">
-          {navLinks.map((link) => (
-            <li key={link.href} className="shrink-0">
-              <Link
-                href={link.href}
-                className="text-sm font-medium text-white/80"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </header>
   );
 }
