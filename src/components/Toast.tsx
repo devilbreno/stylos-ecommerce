@@ -4,11 +4,11 @@ import { useEffect } from "react";
 import { useCart } from "@/context/CartContext";
 
 export default function Toast() {
-  const { toast, dismissToast } = useCart();
+  const { toast, dismissToast, openCart } = useCart();
 
   useEffect(() => {
     if (!toast) return;
-    const timer = setTimeout(dismissToast, 2200);
+    const timer = setTimeout(dismissToast, 3500);
     return () => clearTimeout(timer);
   }, [toast, dismissToast]);
 
@@ -18,9 +18,19 @@ export default function Toast() {
     <div
       role="status"
       aria-live="polite"
-      className="fixed bottom-6 left-1/2 z-110 -translate-x-1/2 rounded-md bg-navy px-4 py-2.5 text-sm font-medium text-white shadow-lg"
+      className="fixed bottom-6 left-1/2 z-110 flex -translate-x-1/2 items-center gap-3 rounded-md bg-navy py-2.5 pr-2.5 pl-4 text-sm font-medium text-white shadow-lg"
     >
       {toast.message}
+      <button
+        type="button"
+        onClick={() => {
+          dismissToast();
+          openCart();
+        }}
+        className="shrink-0 rounded bg-white/10 px-3 py-1.5 font-semibold transition-colors hover:bg-white/20"
+      >
+        Ver carrinho
+      </button>
     </div>
   );
 }
