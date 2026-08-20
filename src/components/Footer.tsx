@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { products } from "@/data/products";
 
+/** Mesma origem do menu do header — ver Header.tsx */
 const navLinks = [
-  { label: "Camisetas", href: "/camisetas" },
-  { label: "Bucket", href: "/bucket" },
-  { label: "Relógios", href: "/relogios" },
+  ...products.map((product) => ({
+    label: product.tabLabel,
+    href: `/${product.anchor}`,
+  })),
   { label: "Sobre", href: "#sobre" },
 ];
 

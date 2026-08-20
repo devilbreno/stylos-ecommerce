@@ -2,11 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import CartButton from "@/components/CartButton";
 import MobileNav from "@/components/MobileNav";
+import { products } from "@/data/products";
 
+/** Menu derivado do catálogo — categoria nova entra aqui sozinha */
 const navLinks = [
-  { label: "Camisetas", href: "/camisetas" },
-  { label: "Bucket", href: "/bucket" },
-  { label: "Relógios", href: "/relogios" },
+  ...products.map((product) => ({
+    label: product.tabLabel,
+    href: `/${product.anchor}`,
+  })),
   { label: "Sobre", href: "#sobre" },
 ];
 
@@ -29,7 +32,7 @@ export default function Header() {
         </Link>
 
         <nav aria-label="Categorias" className="hidden md:block">
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-5 lg:gap-8">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link

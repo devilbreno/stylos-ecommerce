@@ -27,6 +27,12 @@ Sem frase de efeito — os números falam sozinhos. Só os rótulos, curtos, ao 
 **Camisetas básicas**
 14 cores. Do P ao GG. R$ 10,99, sem pedido mínimo.
 
+**Camisetas infantis**
+5 cores. Do 2 ao 14. R$ 10,30, sem pedido mínimo.
+
+**Moletom canguru**
+Cor preta. Do P ao GG. R$ 32,90, sem pedido mínimo.
+
 **Chapéu bucket**
 8 cores. Tamanho único, 57cm. R$ 8,50, sem pedido mínimo.
 
@@ -76,7 +82,7 @@ Aqui, você monta o pedido online e retira pessoalmente na loja, em Franca/SP.
 ## [RODAPÉ]
 
 - Tagline curta: **Stylos — catálogo direto, sem enrolação.**
-- Navegação: Camisetas · Bucket · Relógios · Sobre
+- Navegação: Camisetas · Infantil · Moletom · Bucket · Relógios · Sobre
 - Contato: WhatsApp (16) 99294-9249
 - Endereço: Rua Major Moura Mattos, 1465 — Jardim Dermínio, Franca/SP
 - Horário: Seg a sex, 7h às 17h
@@ -86,8 +92,8 @@ Aqui, você monta o pedido online e retira pessoalmente na loja, em Franca/SP.
 
 ## [SEO / META] (bônus — não pedido, mas útil pro deploy)
 
-- **Title:** Stylos — Camisetas, Bucket Hats e Relógios | Catálogo em Franca/SP
-- **Meta description:** Catálogo Stylos: camisetas em 14 cores, bucket hats e relógios com desconto por quantidade. Monte seu pedido e retire em Franca/SP.
+- **Title:** Stylos — Camisetas, Moletons, Bucket Hats e Relógios | Catálogo em Franca/SP
+- **Meta description:** Catálogo Stylos: camisetas adulto e infantil, moletom canguru, bucket hats e relógios com desconto por quantidade. Monte seu pedido e retire em Franca/SP.
 
 ---
 

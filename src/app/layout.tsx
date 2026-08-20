@@ -22,13 +22,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Stylos — Camisetas, Bucket Hats e Relógios | Catálogo em Franca/SP",
+  title:
+    "Stylos — Camisetas, Moletons, Bucket Hats e Relógios | Catálogo em Franca/SP",
   description:
-    "Catálogo Stylos: camisetas em 14 cores, bucket hats e relógios com desconto por quantidade. Monte seu pedido e retire em Franca/SP.",
+    "Catálogo Stylos: camisetas adulto e infantil, moletom canguru, bucket hats e relógios com desconto por quantidade. Monte seu pedido e retire em Franca/SP.",
   openGraph: {
-    title: "Stylos — Camisetas, Bucket Hats e Relógios",
+    title: "Stylos — Camisetas, Moletons, Bucket Hats e Relógios",
     description:
-      "Camisetas em 14 cores, bucket hats e relógios com desconto por quantidade. Monte seu pedido e retire em Franca/SP.",
+      "Camisetas adulto e infantil, moletom canguru, bucket hats e relógios. Monte seu pedido e retire em Franca/SP.",
     url: "/",
     siteName: "Stylos",
     locale: "pt_BR",
