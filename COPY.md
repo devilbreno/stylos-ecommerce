@@ -31,7 +31,7 @@ Sem frase de efeito — os números falam sozinhos. Só os rótulos, curtos, ao 
 5 cores. Do 2 ao 14. R$ 10,30, sem pedido mínimo.
 
 **Moletom canguru**
-Cor preta. Do P ao GG. R$ 32,90, sem pedido mínimo.
+5 cores. Do P ao GG. R$ 32,90, sem pedido mínimo.
 
 **Chapéu bucket**
 8 cores. Tamanho único, 57cm. R$ 8,50, sem pedido mínimo.
