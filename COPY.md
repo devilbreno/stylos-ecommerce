@@ -25,7 +25,7 @@ Sem frase de efeito — os números falam sozinhos. Só os rótulos, curtos, ao 
 **Subtítulo:** Escolha a cor, o tamanho, e feche o pedido em um clique.
 
 **Camisetas básicas**
-14 cores. Do P ao GG. R$ 10,99, sem pedido mínimo.
+14 cores. Do P ao GG. R$ 10,90, sem pedido mínimo.
 
 **Camisetas infantis**
 5 cores. Do 2 ao 14. R$ 10,30, sem pedido mínimo.

@@ -142,7 +142,7 @@ preço e disponibilidade item por item.
 
 | Produto | Variações | Preço | Observação |
 |---|---|---|---|
-| Camiseta básica adulto | 14 cores (preta, verde, roxo, marrom, azul marinho, rosa, azul royal, bege, amarela, vermelha, branca, off white, bordô, cinza) × tamanhos P, M, G, GG | R$ 10,99 | Preço único, sem pedido mínimo |
+| Camiseta básica adulto | 14 cores (preta, verde, roxo, marrom, azul marinho, rosa, azul royal, bege, amarela, vermelha, branca, off white, bordô, cinza) × tamanhos P, M, G, GG | R$ 10,90 | Preço único, sem pedido mínimo |
 | Chapéu bucket | 8 cores (preto, azul, vermelho, rosa, roxo, amarelo, verde, branco) — tamanho único 57cm | R$ 8,50 | Preço único, sem pedido mínimo |
 | Relógio | Somente preto | R$ 4,00 (1–9 un) / R$ 3,50 (10–99 un) / R$ 3,00 (100+ un) | Preço escalonado por quantidade — requer lógica de cálculo dinâmico no carrinho |
 

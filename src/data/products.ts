@@ -39,9 +39,9 @@ export const products: Product[] = [
     name: "Camisetas básicas",
     tabLabel: "Camisetas",
     singularName: "Camiseta básica",
-    description: "14 cores · Do P ao GG · R$ 10,99, sem pedido mínimo",
-    priceLabel: "R$ 10,99",
-    unitPrice: 10.99,
+    description: "14 cores · Do P ao GG · R$ 10,90, sem pedido mínimo",
+    priceLabel: "R$ 10,90",
+    unitPrice: 10.9,
     priceNote: "sem pedido mínimo",
     sizes: ["P", "M", "G", "GG"],
     colors: [
